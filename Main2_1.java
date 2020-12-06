@@ -133,12 +133,10 @@ abstract class West2FriedChickenRestauran implements FriedChickenRestaurant{
         if(meal.getD() instanceof Beer){
             Beer b=(Beer) meal.getD();
             if(use(b)) account+=meal.getPrice();
-            else use(b);
         }
         if(meal.getD() instanceof Juice){
             Juice j=(Juice) meal.getD();
             if(use(j)) account+=meal.getPrice();
-            else use(j);
         }
     }
     @Override
